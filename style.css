@@ -1,0 +1,105 @@
+/* font-family: 'Kumbh Sans', sans-serif; */
+
+:root{
+    --darkCyan: hsl(185, 75%, 39%);
+    --veryDarkDesaturatedBlue: hsl(229, 23%, 23%);
+    --darkGrayishBlue: hsl(227, 10%, 46%);
+    --darkGray: hsl(0, 0%, 59%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--darkCyan);
+    background-image:url(images/bg-pattern-top.svg),
+    url(images/bg-pattern-bottom.svg) ;
+    background-position: left;
+    font-family: 'Kumbh Sans', sans-serif;
+    background-repeat: no-repeat;
+  background-position: 
+  right 50vw top -57vh,
+  left 40vw top 60vh
+}
+.wrapper{
+    width: 350px;
+    border-radius: 20px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 10px 10px 15px 8px hsl(185, 61%, 38%) ;
+}
+
+.back-ground{
+    width: 100%;
+    background-image: url(images/bg-pattern-card.svg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px 20px 0px 0px;
+    height: 150px;
+
+}
+
+.img-container{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid white;
+    position: relative;
+    top: 90px;
+    left: 120px;
+}
+.about{
+    padding: 20px;
+    margin-top: 30px;
+    text-align:center;
+}
+
+.name-and-age h2, .name-and-age p{
+    display: inline-block;
+    text-align: center;
+    margin: 5px 10px;
+}
+.name-and-age h2, .more-details h3{
+    color: var(--veryDarkDesaturatedBlue);
+    font-weight: 700;
+}
+.name-and-age p, .location, .bl p{
+    color:var(--darkGray);
+    font-weight: 400;
+    font-size: 15px;
+}
+.location{
+    margin: 8px 0;
+}
+
+.more-details{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    align-items: center;
+    border-top: 1px solid rgba(191, 191, 191, 0.578);
+    padding-top: 5px ;
+}
+.bl{
+    padding: 10px;
+    text-align: center;
+    transition: all .6s ease-in;
+    width: 100px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 3px;
+}
+
+.bl p{
+    margin: 5px 0;
+}
+
+.bl:hover{
+    background-color: hsla(185, 88%, 77%, 0.444);
+}
